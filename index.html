@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="logo__link" aria-label="Home page link">
+        <img
+          src="./images/logo.svg"
+          alt=""
+          class="logo__img"
+          aria-hidden="true"
+        />
+      </a>
+      <main class="app">
+        <form action="#" class="form">
+          <section class="section--bill">
+            <p class="section__title">Bill</p>
+            <input type="number" name="bill" id="bill" />
+          </section>
+
+          <fieldset class="section--select-tip">
+            <legend class="section__title">Select Tip %</legend>
+
+            <label for="tip-percent--5" class="tip-percent__label">5%</label>
+            <input type="radio" name="tip-percent" id="tip-percent--5" />
+
+            <label for="tip-percent--10" class="tip-percent__label">10%</label>
+            <input type="radio" name="tip-percent" id="tip-percent--10" />
+
+            <label for="tip-percent--15" class="tip-percent__label">15%</label>
+            <input type="radio" name="tip-percent" id="tip-percent--15" />
+
+            <label for="tip-percent--25" class="tip-percent__label">25%</label>
+            <input type="radio" name="tip-percent" id="tip-percent--25" />
+
+            <label for="tip-percent--50" class="tip-percent__label">50%</label>
+            <input type="radio" name="tip-percent" id="tip-percent--50" />
+
+            <label for="tip-percent--custom" class="tip-percent__label"
+              >Custom</label
+            >
+            <input
+              type="number"
+              name="tip-percent"
+              id="tip-percent--custom"
+              min="0"
+              max="100"
+            />
+          </fieldset>
+
+          <section class="section--select-people">
+            <p class="section__title">Number of People</p>
+            <input type="number" name="poeple-number" id="people-number" />
+          </section>
+        </form>
+        <section class="result">
+          <div class="result__item">
+            <div class="result__textbox">
+              <p class="result__title">Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="result__amount">
+              <span class="dollar-sign">&dollar;</span>
+              <p class="tip">4.27</p>
+            </div>
+          </div>
+          <div class="result__item">
+            <div class="result__textbox">
+              <p class="result__title">Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="result__amount">
+              <span class="dollar-sign">&dollar;</span>
+              <p class="total">32.79</p>
+            </div>
+          </div>
+          <button class="btn btn--reset">Reset</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
