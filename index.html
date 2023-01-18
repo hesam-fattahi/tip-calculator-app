@@ -33,42 +33,91 @@
         <form action="#" class="form">
           <section class="section--bill">
             <p class="section__title">Bill</p>
-            <input type="number" name="bill" id="bill" />
+            <label class="input--container" for="bill">
+              <img src="./images/icon-dollar.svg" alt="" aria-hidden="true" />
+              <input
+                type="number"
+                name="bill"
+                id="bill"
+                class="input--number"
+                placeholder="0"
+              />
+            </label>
           </section>
 
           <fieldset class="section--select-tip">
             <legend class="section__title">Select Tip %</legend>
 
-            <label for="tip-percent--5" class="tip-percent__label">5%</label>
-            <input type="radio" name="tip-percent" id="tip-percent--5" />
+            <label for="tip-percent--5" class="input--radio__label">5%</label>
+            <input
+              type="radio"
+              name="tip-percent"
+              class="input--radio hidden"
+              id="tip-percent--5"
+            />
 
-            <label for="tip-percent--10" class="tip-percent__label">10%</label>
-            <input type="radio" name="tip-percent" id="tip-percent--10" />
+            <label for="tip-percent--10" class="input--radio__label">10%</label>
+            <input
+              type="radio"
+              name="tip-percent"
+              class="input--radio hidden"
+              id="tip-percent--10"
+            />
 
-            <label for="tip-percent--15" class="tip-percent__label">15%</label>
-            <input type="radio" name="tip-percent" id="tip-percent--15" />
+            <label for="tip-percent--15" class="input--radio__label">15%</label>
+            <input
+              type="radio"
+              name="tip-percent"
+              class="input--radio hidden"
+              id="tip-percent--15"
+            />
 
-            <label for="tip-percent--25" class="tip-percent__label">25%</label>
-            <input type="radio" name="tip-percent" id="tip-percent--25" />
+            <label for="tip-percent--25" class="input--radio__label">25%</label>
+            <input
+              type="radio"
+              name="tip-percent"
+              class="input--radio hidden"
+              id="tip-percent--25"
+            />
 
-            <label for="tip-percent--50" class="tip-percent__label">50%</label>
-            <input type="radio" name="tip-percent" id="tip-percent--50" />
+            <label for="tip-percent--50" class="input--radio__label">50%</label>
+            <input
+              type="radio"
+              name="tip-percent"
+              class="input--radio hidden"
+              id="tip-percent--50"
+            />
 
-            <label for="tip-percent--custom" class="tip-percent__label"
+            <label
+              for="tip-percent--custom"
+              class="input--custom__label"
+              id="custom-label"
               >Custom</label
             >
             <input
               type="number"
               name="tip-percent"
               id="tip-percent--custom"
+              class="input--custom input--number hidden"
               min="0"
               max="100"
+              placeholder="0"
             />
           </fieldset>
 
           <section class="section--select-people">
             <p class="section__title">Number of People</p>
-            <input type="number" name="poeple-number" id="people-number" />
+
+            <label class="input--container" for="people-number">
+              <img src="./images/icon-person.svg" alt="" aria-hidden="true" />
+              <input
+                type="number"
+                name="people-number"
+                class="input--number"
+                id="people-number"
+                placeholder="0"
+              />
+            </label>
           </section>
         </form>
         <section class="result">
@@ -79,7 +128,7 @@
             </div>
             <div class="result__amount">
               <span class="dollar-sign">&dollar;</span>
-              <p class="tip">4.27</p>
+              <p class="tip">0.00</p>
             </div>
           </div>
           <div class="result__item">
@@ -89,7 +138,7 @@
             </div>
             <div class="result__amount">
               <span class="dollar-sign">&dollar;</span>
-              <p class="total">32.79</p>
+              <p class="total">0.00</p>
             </div>
           </div>
           <button class="btn btn--reset">Reset</button>
