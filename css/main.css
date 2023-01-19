@@ -102,19 +102,27 @@ body {
 .section__title {
   margin-bottom: 0.5rem;
 }
-
-.section--select-tip {
+.section--tip {
   border: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
 }
-.section--select-tip .section__title {
+.section--tip .section__title {
   grid-column: 1/-1;
   margin-bottom: 1rem;
 }
+.section--people-count.error {
+  position: relative;
+}
+.section--people-count.error .input-container {
+  border: 2px solid #f43f5e;
+}
+.section--people-count.error .error-message {
+  display: block;
+}
 
-.input--container {
+.input-container {
   width: 100%;
   border: 2px solid transparent;
   background-color: hsl(189deg, 41%, 97%);
@@ -126,10 +134,9 @@ body {
   cursor: pointer;
   transition: 0.3s ease-out;
 }
-.input--container:has(> .input--number:focus) {
+.input-container:has(> .input--number:focus) {
   border: 2px solid hsl(172deg, 67%, 45%);
 }
-
 .input--number {
   flex: 1;
   border: none;
@@ -155,8 +162,7 @@ body {
   -webkit-appearance: none;
 }
 
-.input--radio__label,
-.input--custom__label {
+.tip-label {
   background-color: hsl(183deg, 100%, 15%);
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5rem;
@@ -167,34 +173,29 @@ body {
   transition: 0.3s ease-out;
 }
 
-.input--radio:checked + .input--radio__label {
+.input--radio:checked + .tip-label {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
 }
 
-#tip-percent--custom {
+#tip--custom {
   background-color: hsl(189deg, 41%, 97%);
   padding: 0.375rem 0.5rem;
   border-radius: 0.25rem;
+  border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+#tip--custom:focus {
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
 
-#custom-label {
+#label-custom {
   background-color: hsl(189deg, 41%, 97%);
   color: hsl(183deg, 100%, 15%);
   transition: 0.3s ease-out;
 }
 
-.section--select-people.error {
-  position: relative;
-}
-.section--select-people.error .input--container {
-  border: 2px solid #f43f5e;
-}
-.section--select-people.error .error__message {
-  display: block;
-}
-
-.error__message {
+.error-message {
   display: none;
   color: #f43f5e;
   position: absolute;
@@ -238,7 +239,7 @@ body {
   font-size: 0.875em;
 }
 
-.btn--reset {
+.btn-reset {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
   font-size: 1.25rem;
@@ -249,10 +250,10 @@ body {
   border-radius: 0.25rem;
   transition: 0.3s ease-out;
 }
-.btn--reset:hover, .btn--reset:active {
+.btn-reset:hover, .btn-reset:active {
   background-color: #7fe6d8;
 }
-.btn--reset.deactive {
+.btn-reset.deactive {
   opacity: 0.3;
   pointer-events: none;
 }
