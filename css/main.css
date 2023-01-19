@@ -116,7 +116,7 @@ body {
 
 .input--container {
   width: 100%;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   background-color: hsl(189deg, 41%, 97%);
   padding: 0.25rem 1rem;
   border-radius: 0.25rem;
@@ -124,6 +124,10 @@ body {
   align-items: center;
   gap: 0.25rem;
   cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.input--container:has(> .input--number:focus) {
+  border: 2px solid hsl(172deg, 67%, 45%);
 }
 
 .input--number {
@@ -160,11 +164,42 @@ body {
   padding: 0.375rem 0.5rem;
   border-radius: 0.25rem;
   cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.input--radio:checked + .input--radio__label {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+#tip-percent--custom {
+  background-color: hsl(189deg, 41%, 97%);
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.25rem;
 }
 
 #custom-label {
   background-color: hsl(189deg, 41%, 97%);
   color: hsl(183deg, 100%, 15%);
+  transition: 0.3s ease-out;
+}
+
+.section--select-people.error {
+  position: relative;
+}
+.section--select-people.error .input--container {
+  border: 2px solid #f43f5e;
+}
+.section--select-people.error .error__message {
+  display: block;
+}
+
+.error__message {
+  display: none;
+  color: #f43f5e;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .result {
@@ -212,6 +247,14 @@ body {
   margin-top: auto;
   border: none;
   border-radius: 0.25rem;
+  transition: 0.3s ease-out;
+}
+.btn--reset:hover, .btn--reset:active {
+  background-color: #7fe6d8;
+}
+.btn--reset.deactive {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 @media (min-width: 47em) {
