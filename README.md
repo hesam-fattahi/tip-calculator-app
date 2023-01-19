@@ -16,7 +16,8 @@ Users should be able to:
 
 ### Links
 
-- **Links will be added soon**
+- Solution URL : [Tip calculator app - Frontend mentor](#)
+- Live site URL : [https://hesam-fattahi.github.io/tip-calculator-app/](https://hesam-fattahi.github.io/tip-calculator-app/)
 
 ## My process
 
@@ -27,7 +28,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- **(JS will be added in the future)**
+- Javascript
 
 ## Author
 
