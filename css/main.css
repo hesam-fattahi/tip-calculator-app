@@ -116,7 +116,7 @@ body {
   position: relative;
 }
 .section--people-count.error .input-container {
-  border: 2px solid #f43f5e;
+  border: 2px solid #f43f5e !important;
 }
 .section--people-count.error .error-message {
   display: block;
