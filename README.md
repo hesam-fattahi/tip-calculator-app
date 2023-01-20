@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL : [Tip calculator app - Frontend mentor](#)
+- Solution URL : [Tip calculator app - Frontend mentor](https://www.frontendmentor.io/solutions/tip-calculator-app-yeA9z2Pws7)
 - Live site URL : [https://hesam-fattahi.github.io/tip-calculator-app/](https://hesam-fattahi.github.io/tip-calculator-app/)
 
 ## My process
