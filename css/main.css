@@ -67,6 +67,17 @@ body {
   display: none !important;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .container {
   width: 100%;
   max-width: 948px;
@@ -235,6 +246,9 @@ body {
 .result__textbox span {
   color: hsl(184deg, 14%, 56%);
   font-size: 0.75rem;
+}
+.result__title {
+  font-size: 1rem;
 }
 .result__amount {
   color: hsl(172deg, 67%, 45%);

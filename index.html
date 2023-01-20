@@ -30,8 +30,9 @@
         />
       </a>
       <main class="app">
+        <h1 class="sr-only">Tip calculator app</h1>
         <form action="#" class="form">
-          <section class="section section--bill">
+          <div class="section section--bill">
             <p class="section__title">Bill</p>
             <label class="input-container" for="bill">
               <img src="./images/icon-dollar.svg" alt="" aria-hidden="true" />
@@ -43,7 +44,7 @@
                 placeholder="0"
               />
             </label>
-          </section>
+          </div>
 
           <fieldset class="section section--tip">
             <legend class="section__title">Select Tip %</legend>
@@ -101,7 +102,7 @@
             >
           </fieldset>
 
-          <section class="section section--people-count">
+          <div class="section section--people-count">
             <p class="error-message">Can't be zero</p>
             <p class="section__title">Number of People</p>
 
@@ -115,12 +116,12 @@
                 placeholder="0"
               />
             </label>
-          </section>
+          </div>
         </form>
         <section class="result">
           <div class="result__item">
             <div class="result__textbox">
-              <p class="result__title">Tip Amount</p>
+              <h2 class="result__title">Tip Amount</h2>
               <span>/ person</span>
             </div>
             <div class="result__amount">
@@ -130,7 +131,7 @@
           </div>
           <div class="result__item">
             <div class="result__textbox">
-              <p class="result__title">Total</p>
+              <h2 class="result__title">Total</h2>
               <span>/ person</span>
             </div>
             <div class="result__amount">
